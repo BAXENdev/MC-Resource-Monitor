@@ -1,0 +1,39 @@
+Kelp Monitor
+RESOURCE_DISPLAY
+FACTORY_HOST
+modem_0
+
+The first 4 lines must be:
+1: Monitor Name
+2: Rednet Protocol Name
+3: Rednet Host Name
+4: modem peripheral name
+
+These give the program the ability to connect to the Resource Display
+
+A normal inventory specifies the items.
+Its elements are:
+1: "INVENTORY"
+2: Inventory Name
+3: Inventory peripheral name
+4+: "[mod namespace]:[mod item name]"
+lastline: "END INVENTORY"
+
+INVENTORY
+minecraft:barrel_0
+Kelp Barrel
+minecraft:kelp
+END INVENTORY
+
+An inventory that records all items is different.
+If "ALL" is found in the inventory, it sets that inventory
+to ALL items and end the inventory search.
+"ALL" supplements "END INVENTORY".
+Item names can be included prior to it, but wont be used.
+
+INVENTORY
+minecraft:chest_0
+Mine Storage
+All
+
+these spaces allow for comments

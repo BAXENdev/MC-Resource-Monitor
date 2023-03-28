@@ -1,0 +1,75 @@
+
+host save format
+LINE # : DATA
+display.db
+1:[PROTOCOL NAME]
+2:[HOST NAME]
+
+
+monitor save format
+LINE # : DATA
+monitor.db
+1:[MONITOR NAME]
+2:[PROTOCOL NAME]
+3:[HOST NAME]
+4:[PERIPHERAL MODEM NAME]
+5:INVENTORY
+6:[PERIPHERAL INVENTORY NAME]
+7:[DISPLAY NAME]
+8:[ITEM 1]
+9:[ITEM 2]
+...
+10:END INVENTORY
+11:INVENTORY
+...
+
+
+transmission table
+TABLE = 
+{
+    NAME = "Kelp Monitor",
+    INVENTORIES = 
+    {
+        [1] = 
+        {
+            ["PERIPHERAL_NAME"] = "barrel_0"
+            ["DISPLAY_NAME"] = "Kelp Barrel 1", 
+            [1] = {ITEM = "Kelp", COUNT = 1024}
+            [2] = {ITEM = "wood_log", COUNT = 200}
+            .
+            .
+            .
+        }
+        [2] = 
+        {
+            ["PERIPHERAL_NAME"] = "chest_0"
+            ["DISPLAY_NAME"] = "Mine Storage"
+            ["ALL"] = true
+        }
+        .
+        .
+    }
+}
+
+
+host.db
+
+
+monitor.db
+------------------
+Kelp Monitor
+RESOURCE_DISPLAY
+FACTORY_HOST
+modem_0
+INVENTORY
+barrel_0
+Kelp Barrel
+minecraft:kelp
+END INVENTORY
+INVENTORY
+chest_0
+Mine Storage
+ALL
+END INVENTORY
+-----------------
+

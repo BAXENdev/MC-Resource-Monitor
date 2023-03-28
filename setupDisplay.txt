@@ -1,0 +1,71 @@
+STATES
+Previous setup -> No -> Need Wireless -> Port Number -> Auto Setup -> No -> Loop until no inventories : Setup Inventory Decision -> Yes -> Name Inventory -> Select Items -> Selected Items more than 0 -> Setup and loop
+               -> Yes -> Auto fill settings                        -> Yes -> done                                                -> No -> Loop                            -> Selcted items = 0 -> No setup and loop   
+
+Cursor Position is 1-50, 1-16
+Must know position for cursor spot
+
+Setup Inventory Decision                              Name Inventory                                        Select Items From Inventory
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃    Name: [Name]                                  ┃  ┃    Name: [Name]                                  ┃  ┃    Name: [Custom Name]                           ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃    Slot / Item / Count                           ┃  ┃    What would you like the display name          ┃  ┃    What items would you like tracked?            ┃
+┃    1: projectred-transmission:yellow_framed_     ┃  ┃    to be?                                        ┃  ┃                                                  ┃
+┃    2                                             ┃  ┃    A blank will use the inventory name.          ┃  ┃    _                                             ┃
+┃    3                                             ┃  ┃                                                  ┃  ┃                                                  ┃
+┃    4                                             ┃  ┃    _                                             ┃  ┃    Options:                                      ┃
+┃    5                                             ┃  ┃                                                  ┃  ┃    Item : Ex: minecraft:iron_ingot               ┃
+┃    6                                             ┃  ┃                                                  ┃  ┃         will ask for another item.               ┃
+┃    7                                             ┃  ┃                                                  ┃  ┃    All Items : Ex: -a ; Will track all items     ┃
+┃    8                                             ┃  ┃                                                  ┃  ┃         in and exit menu.                        ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    Current Items : -c ; Will track all items     ┃
+┃    Monitor Barrel (y/n)? _                       ┃  ┃                                                  ┃  ┃         currently in inventory and exit menu.    ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    Exit : -e ; Exits menu with current list.     ┃
+┃    Use "Up"/"Down" input to Scroll               ┃  ┃                                                  ┃  ┃         Will not track inventory of no items     ┃
+┃                                                  ┃  ┃                                                  ┃  ┃         were added.                              ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+Port Selection                                        Inventory Found Option                                Generic Inventory Selection
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃    Require wireless modem (y/n)?                 ┃  ┃    Barrel has a tracking list.                   ┃  ┃    Inventories : Page [Num]/[Total]              ┃
+┃                                                  ┃  ┃    Would you like to update the tracking         ┃  ┃                                                  ┃
+┃    _                                             ┃  ┃    list (y/n)?                                   ┃  ┃    1. [Name] : [Item]                            ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    2.                                            ┃
+┃    Enter custom protocol name:                   ┃  ┃    _                                             ┃  ┃    3                                             ┃
+┃    Just hit ENTER to skip                        ┃  ┃                                                  ┃  ┃    4                                             ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    5                                             ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    6                                             ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    Use Auto Setup (y/n)? _                       ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    Use Up/Down Arrows to Scroll.                 ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    Auto Setup will track the first item in       ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    every inventory using the name format:        ┃
+┃                                                  ┃  ┃                                                  ┃  ┃    [Item] [Inventory Name] : Ex: Kelp Barrel     ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+                                                                                             
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┃                                                  ┃  ┃                                                  ┃  ┃                                                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
